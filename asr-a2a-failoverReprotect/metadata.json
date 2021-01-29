@@ -1,0 +1,9 @@
+{
+    "$schema": "https://aka.ms/azure-quickstart-templates-metadata-schema#",
+    "type": "QuickStart",
+    "itemDisplayName": "Failover and Reprotect Azure Protected VMs using ASR",
+    "description": "This template should be used to initiate Failover and Reprotect operations for ASR Protected Instances. It accepts the list of Azure VM ARM IDs as Input, and triggers Failover, followed by Reprotect, for the VMs.",
+    "summary": "This template should be used to initiate Failover and Reprotect operations for ASR Protected Instances.",
+    "githubUsername": "rishjai-msft",
+    "dateUpdated": "2021-01-29"
+  }
