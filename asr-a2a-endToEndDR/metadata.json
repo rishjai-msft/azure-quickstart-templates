@@ -1,0 +1,9 @@
+{
+    "$schema": "https://aka.ms/azure-quickstart-templates-metadata-schema#",
+    "type": "QuickStart",
+    "itemDisplayName": "Trigger End to End DR flow for Azure VMs using ASR",
+    "description": "This template should be used to initiate End to End DR (540°) flow operations (Enable Protection, Failover and Reprotect, Failback and Reprotect) for ASR Protected Instances. It accepts the list of Azure VM ARM IDs as Input, and triggers all the operations sequentially for the VMs.",
+    "summary": "This template should be used to initiate End to End DR (540°) flow operations for ASR Protected Instances.",
+    "githubUsername": "rishjai-msft",
+    "dateUpdated": "2021-01-29"
+  }

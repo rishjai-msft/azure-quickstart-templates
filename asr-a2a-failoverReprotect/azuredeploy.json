@@ -2,6 +2,13 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+        "resourceGroupLocation":{
+            "type": "String",
+            "defaultValue": "[resourceGroup().location]",
+            "metadata": {
+                "description": "Location of the resource group in which Deployment Script will be deployed."
+            }
+        },
         "identity": {
             "type": "String",
             "metadata": {
@@ -80,7 +87,7 @@
             "type": "Microsoft.Resources/deploymentScripts",
             "apiVersion": "2019-10-01-preview",
             "name": "FailoverAndReprotect",
-            "location": "[resourceGroup().location]",
+            "location": "replace(string(parameters('resourceGroupLocation')), ' ', '')",
             "kind": "AzurePowerShell",
             "identity": {
                 "type": "userAssigned",
